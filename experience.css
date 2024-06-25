@@ -1,0 +1,133 @@
+.experience{
+    padding: 8rem 7% 1.4rem;
+}
+
+.experience h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience h2{
+    margin-bottom: 3rem;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.experience h2 span{
+    color: var(--primary);
+}
+
+.experience .layer{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.experience .row .experience-img{
+    flex: 1 1 45rem;
+    margin-right: 2rem;
+}
+
+
+.experience .row .experience-img img{
+    width: 35rem;
+}
+
+.experience .row .content{
+    /* flex: 1 1 35rem; */
+    padding: 0 1rem;
+}
+
+.experience .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.experience .row .content p{
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* Membuat efek gambar zoom in */
+.menu-card-img {
+    transition: transform 0.3s ease; /* Animasi halus */
+    cursor: pointer; /* Menunjukkan bahwa elemen ini dapat diklik */
+}
+
+.menu-card-img:hover {
+    transform: scale(1.1); /* Membesar ketika dihover */
+}
+
+/* SKILL CSS */
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h2 {
+  margin: 5px 0;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 23px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 1s ease, background-color 0.5s ease; /* Animasi lebar dan warna skill bar */
+}
+
+.skill-level.increase {
+  animation: increaseWidth 1s ease-out forwards; /* Animasi tambahan untuk meningkatkan lebar */
+}
+
+#skill .gambar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gambar img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gambar img {
+  transition: transform 0.3s ease; /* Animasi halus */
+  cursor: pointer; /* Menunjukkan bahwa elemen ini dapat diklik */
+}
+
+.gambar img:hover {
+    transform: scale(1.1); /* Membesar ketika dihover */
+}
+
+@keyframes increaseWidth {
+  from { width: 0; }
+  to { width: calc(var(--level) * 100%); }
+}
+
+@media (max-width: 768px) { /* Untuk layar tablet */
+  .gambar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* SOSIAL DI HOME */
+.sosial{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.sosial a{
+  margin-right: 4rem;
+  color: #fff;
+}
